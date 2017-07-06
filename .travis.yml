@@ -1,14 +1,17 @@
 language: node_js
 node_js:
-  - "7"
+- '7'
 before_install:
-  - npm i -g create-react-app
+- npm i -g create-react-app
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
+- npm run build
 deploy:
   provider: pages
-  skip_cleanup: yes
+  skip_cleanup: true
   on:
     branch: master
+env:
+  global:
+    secure: XG+AU8Z1mI/MqESCVKpECzXRxC87HZz0mRcCS0VMAuDqSxdYRWtlw4eVR39IPhi2I1vlMhu4B5CsocGykkE5PYupcCO7z1pG5QOt7q4nzTkt8VcpcTyJutnW4zND77d6egFs5WYTar8/WXAeh6Ii4U1bcF8kH5twkttDNgZtwrDlFAAAdUamv0IWjEQQd0rVHW0AxihewIIbkWcbNN+EfqX6sShMAGzYCObkJUReTpYpy0k4sUnR7TVq9Fnag7nagW3xcxqkOclbWJflDDhwohrybRSsQJ6k+okkLu/va905a2kHDJqMfYZD9IQ98+wWOkE6Ak3EOWTB3ktxzJPMcFrh8TWIKm/Ca0VoI/Mu9J4ZgG3omfjqJwemTWW/bQBrZzZRWQ9PZIoDnH9m0CYPJzfn9E5TuCpgWCJO3XSzLE6ImQ1ng+l8GXLoIq/swReQMaP5aSZZO4UO/d31SOKNRtzX771VteOB+/eFBTnzQIgxsiu5TFuyKhQjz+8iJgmPeolct/oOcyQQDpWoxQcen6KSa3ai1XUc4rLG6InBjOCU9OWKBpAvd5OColVayL9LhMLpYzvv1e+hz9nCGZBU9PaqidXKonDVTUj0PP77AMFQxkxKLmMLv0AXVm3oHbXFOLIK0CiFlddH3CTpobrSnNn5oS0sJ8dGzeSFLzCjJus=
