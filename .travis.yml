@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "7"
+before_install:
+  - npm i -g create-react-app
+install:
+  - npm install
+script:
+  - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: yes
+  on:
+    branch: master
